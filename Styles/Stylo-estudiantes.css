@@ -1,171 +1,119 @@
-*{
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: black;
+body {
+    background: #f0f8ff;
 }
 
 .form-agregar {
+    display: flex;
+    flex-direction: column;
     width: 500px;
     height: auto;
-    background: black;
+    background: #f0f8ff;
     padding: 30px;
     margin: auto;
     margin-top: 70px;
     border-radius: 15px;
     font-family: 'Times New Roman', Times, serif;
-    color: white;
-    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.821);
+    color: #333;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .form-agregar h1 {
     font-size: 25px;
     margin-bottom: 20px;
-    position: relative;
-    left: 109px;
+    text-align: center;
 }
 
 .edit {
     width: 100%;
-    background: #0a0a0a;
+    background: #b0e0e6;
     padding: 10px;
     border-radius: 10px;
     margin-top: 15px;
-    border: 1px solid #001a57;
+    border: 1px solid #5f9ea0;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
-    color: white;
+    color: #333;
 }
 
 .form-agregar .button {
-    width: 50%;
-    height: 40px;
     border: none;
-    padding: 5px;
-    color: white;
-    background: #000040;
-    position: relative;
-    left: 100px;
+    padding: 10px 20px;
+    color: #fff;
+    background: #4682b4;
     margin: 10px;
+    border-radius: 5px;
+    font-size: 15px;
 }
 
+.form-agregar #editar {
+    display: none;
+}
 
-/*tablas de registro*/
+/* Tablas de registro */
 
-.container{
+.container {
     margin: 50px;
-    border: solid 2px rgba(255, 255, 255, 0.821);
+    border: solid 2px #b0e0e6;
     display: grid;
     align-items: center;
-    position: relative;
     font-family: 'Times New Roman', Times, serif;
-   
-
 }
 
-table{
-    color: #ffffff;
+table {
+    color: #333;
     font-size: 20px;
     table-layout: fixed;
     border-collapse: collapse;
 }
 
-thead{
-    background: #001a57;
+thead {
+    background: #4682b4;
 }
 
-th{
+th {
     padding: 15px 15px;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
 }
- td{
-    padding: 10px;
-    border-bottom: solid 2px rgba(24, 17, 17, 0.821);
-    font-size: 25px;
- }
 
- table td{
+td {
+    padding: 10px;
+    border-bottom: solid 2px #5f9ea0;
+    font-size: 25px;
+}
+
+table td {
     text-align: center;
 }
 
-table tr:hover{
-    background: #052a81;
+*/ table tr td:hover {
+    background: #333;
+    color: #fff;
 }
 
-table tr td:hover{
-    background: #ffffff;
-    color: #000;
-}
-
-.btn-update {
-    background: #001a57;
-
-    /* Crear degradados */
-    background-image: -webkit-linear-gradient(top, #001a57, #2079b0);
-    background-image: -moz-linear-gradient(top, #001a57, #2079b0);
-    background-image: -ms-linear-gradient(top, #001a57, #2079b0);
-    background-image: -o-linear-gradient(top, #001a57, #2079b0);
-    background-image: linear-gradient(to bottom, #001a57, #2079b0);
-    border: none;
-
-    /* Dar bordes curvados a btn */
-    border-radius: 7px;
-    text-shadow: 3px 3px 1px #000000;
-    -webkit-box-shadow: 10px 10px 24px #000000;
-    -moz-box-shadow: 10px 10px 24px #000000;
-    box-shadow: 10px 10px 24px #000000;
-    font-family: 'Times New Roman', Times, serif;
-    color: #f4ebeb;
-    font-size: 15px;
-    padding: 10px;
-    text-decoration: none;
-    margin: 5px;
-
-}
-
-
-button a{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-/*boton de eliminar*/
-
+.btn-update,
 .btn-delete {
-    background: #001a57;
-
-    /* Crear degradados */
-    background-image: -webkit-linear-gradient(top, #ff0101, #ea947c);
-    background-image: -moz-linear-gradient(top, #ff0101, #ea947c);
-    background-image: -ms-linear-gradient(top, #ff0101, #ea947c);
-    background-image: -o-linear-gradient(top, #ff0101, #ea947c);
-    background-image: linear-gradient(to bottom, #ff0101, #ea947c);
+    background: #4682b4;
+    background-image: linear-gradient(to bottom, #4682b4, #5f9ea0);
     border: none;
-
-    /* Dar bordes curvados a btn */
     border-radius: 7px;
-    text-shadow: 3px 3px 1px #000000;
-    -webkit-box-shadow: 10px 10px 24px #000000;
-    -moz-box-shadow: 10px 10px 24px #000000;
-    box-shadow: 10px 10px 24px #000000;
+    box-shadow: 1px 1px 3px #000000;
     font-family: 'Times New Roman', Times, serif;
-    color: #f4ebeb;
+    color: #fff;
     font-size: 15px;
     padding: 10px;
     text-decoration: none;
     margin: 5px;
-
 }
 
-
-button a{
+button a {
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
 }
-
- 
-

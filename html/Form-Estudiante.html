@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    <!--tabla donde se registran los productos-->
+    <!--formulario de registro-->
     <section class="form-agregar">
         <h1>Agregue el Estudiante</h1>
         <form id="form_agregar">
@@ -18,8 +18,9 @@
             <input class="edit" type="text" id="curso" placeholder="Curso" required>
             <input class="edit" type="text" id="calificacion" placeholder="Calificacion" required>
 
-            <input class="button" type="submit" onclick="Agregar();">
-            <input class="button" type="submit" value="Editar">
+            <input class="button" type="submit" id="agregar" onclick="Agregar();">
+            <input class="button" type="submit" id="editar" value="Editar">
+            <input class="button" type="button" id="Limpiar" value="Limpiar" onclick="LimpiarCelda();">
             
         </form>
     </section>
